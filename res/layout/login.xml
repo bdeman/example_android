@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="70"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110px"
+            android:layout_weight="5"
+            android:gravity="center_horizontal"
+            android:text="Log in"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="#FF0000"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60" />
+
+        <EditText
+            android:id="@+id/etGebruikersnaam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:ems="10"
+            android:hint="E-mailadres"
+            android:inputType="textEmailAddress"  />
+
+        <EditText
+            android:id="@+id/etWachtwoord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_weight="10"
+            android:ems="10"
+            android:hint="Wachtwoord"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_weight="30"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:onClick="doLogin"
+            android:text="      Log in      " />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTRegistreren"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:onClick="goRegister"
+        android:clickable="true"
+        android:layout_weight="10"
+        android:text="Toch registreren?"
+        android:textColor="#0000FF" />
+
+</LinearLayout>

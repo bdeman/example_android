@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="30" />
+
+    <TextView
+        android:id="@+id/tvHeadTextStep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="5"
+        android:text="Dat iets niet naar behoren werkt is altijd jammer. Als klachten beter bijgehouden worden dan kunnen ze sneller opgelost worden."
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="60"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTypeHuis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="In wat voor type huis woont u?"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:textColor="#000000" >
+
+            <RadioButton
+                android:id="@+id/rbWoonhuis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Woonhuis"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/rbAppartement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Appartement"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- This is for the buttons that are visable in every step -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivUnderline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/underline" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bPage1"
+                android:layout_width="46dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_step1selected"
+                android:scaleType="center" />
+
+            <Button
+                android:id="@+id/bPage2"
+                android:layout_width="42dp"
+                android:layout_height="41dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_step2lock"
+                android:scaleType="center" />
+
+            <Button
+                android:id="@+id/bPage3"
+                android:layout_width="42dp"
+                android:layout_height="41dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_step3lock"
+                android:scaleType="center" />
+
+            <Button
+                android:id="@+id/bForward"
+                android:layout_width="122dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_volgende"
+                android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

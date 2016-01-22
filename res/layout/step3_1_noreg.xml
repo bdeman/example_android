@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="30"
+        android:paddingTop="60dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvHead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Wilt u nog even uw gegevens invullen."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/etVoornaamFix"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etAchternaam"
+                android:layout_below="@+id/etAchternaam"
+                android:ems="10"
+                android:hint="Voornaam"
+                android:inputType="textPersonName" />
+            
+            <EditText
+                android:id="@+id/etTussenvoegsels"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etVoornaam"
+                android:ems="10"
+                android:hint="Tussenvoegsels"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etAchternaam"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etTussenvoegsels"
+                android:ems="10"
+                android:hint="Achternaam"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/etMail"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etAchternaam"
+                android:layout_below="@+id/etAchternaam"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="E-mailadres"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/etTelefoonnummer"
+                android:layout_width="239dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etMail"
+                android:layout_below="@+id/etMail"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Telefoonnummer" >
+            </EditText>
+
+
+            <Button
+                android:id="@+id/bRegistratieOpslaan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stepThreeReg"
+                android:text="Opslaan" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

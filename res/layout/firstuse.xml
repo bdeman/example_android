@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/firstuse_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="13" />
+
+    <TextView
+        android:id="@+id/tvFirstUse"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="22"
+        android:text="Welkom bij de klachtenregistratie app"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="16.13"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ibRegistreren"
+            android:layout_width="152dp"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:background="@drawable/ic_registreren"
+            android:onClick="choice"
+            android:scaleType="center" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="10" />
+
+        <Button
+            android:id="@+id/ibInloggen"
+            android:layout_width="152dp"
+            android:layout_height="0dp"
+            android:layout_weight="45"
+            android:background="@drawable/ic_inloggen"
+            android:onClick="choice"
+            android:scaleType="center" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="9" />
+
+    <TextView
+        android:id="@+id/tvRegText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:text="Registreer als u nieuw bent."
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvLogText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:text="Log in als u nieuw bent"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="23" />
+
+    <TextView
+        android:id="@+id/tvVerderNGR"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:onClick="noReg"
+        android:clickable="true"
+        android:text="Verder gaan zonder te registreren?"
+        android:textColor="#0000FF"
+         />
+
+</LinearLayout>

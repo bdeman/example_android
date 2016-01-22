@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="100" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="65dp"
+        android:layout_weight="97"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tvGeregistreerd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Uw klacht is geregistreerd, dank u wel!"
+            android:textColor="#000000"
+            android:textSize="21dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tvAfsluiten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Een fijne dag verder."
+            android:textColor="#000000"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <!-- This is for the buttons that are visable in every step -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/ivUnderline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center"
+            android:src="@drawable/underline" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bPage1"
+                android:layout_width="46dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_step1"
+                android:scaleType="center" />
+
+            <Button
+                android:id="@+id/bPage2"
+                android:layout_width="42dp"
+                android:layout_height="41dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_step2"
+                android:scaleType="center" />
+
+            <Button
+                android:id="@+id/bPage3"
+                android:layout_width="42dp"
+                android:layout_height="41dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_step3selected"
+                android:scaleType="center" />
+
+            <Button
+                android:id="@+id/bForward"
+                android:layout_width="122dp"
+                android:layout_height="32dp"
+                android:background="@drawable/ic_volgende"
+                android:scaleType="center" 
+                android:onClick="shutdown"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
